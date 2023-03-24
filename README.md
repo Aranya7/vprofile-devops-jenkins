@@ -2,6 +2,8 @@
 
 This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd) (_Continuous Integration and Continuous Delivery_) of a java-based vprofile project using Jenkins, Nexus, SonarQube, Docker, AWS Cloud Services and Slack. 
 
+The piepline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven (optional), using code analysis tools like Checkstyle and SonarQube, building .var/.war artificat and storing in Nexus Repository or Building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifactions on specified Slack channels. 
+
 [Link](https://github.com/Aranya7/vprofile-repo-for-devops-project) for vprofile app repository.
 
 ## Problem - Issues with Current Situation:
@@ -91,7 +93,7 @@ This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/wha
 - [**Slack Notification**](https://plugins.jenkins.io/slack/)
 
 ## Overall Architecture:
-![Screenshot (1413)](https://user-images.githubusercontent.com/51438967/227655098-69ea6530-bb8d-403d-b93a-3602d44c81eb.png)
+![Screenshot (1414)](https://user-images.githubusercontent.com/51438967/227660476-fdff73de-05e5-47cb-824d-d112c47abf3d.png)
 
 
 ## Usage (Flow of Execution) - Jenkins CICD Steps:
