@@ -157,3 +157,5 @@ This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/wha
 10. Repeat the Steps for Production ECS Cluster
 
 11. Promoting Docker Image for Production
+
+12. Slack Notifications
