@@ -2,7 +2,7 @@
 
 This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd) (_Continuous Integration and Continuous Delivery_) of a java-based vprofile project using Jenkins, Nexus, SonarQube, Docker, AWS Cloud Services and Slack. 
 
-The piepline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven, using code analysis tools like Checkstyle and SonarQube, building .var/.war artificat and storing in Nexus Repository or Building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifactions on specified Slack channels. 
+The piepline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven, using code analysis tools like Checkstyle and SonarQube, building .var/.war artifact and storing in Nexus Repository or Building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifications on specified Slack channels. 
 
 [Link](https://github.com/Aranya7/vprofile-repo-for-devops-project) for vprofile app repository.
 
