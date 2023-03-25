@@ -2,7 +2,12 @@
 
 This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd) (_Continuous Integration and Continuous Delivery_) of a java-based vprofile project using Jenkins, Nexus, SonarQube, Docker, AWS Cloud Services and Slack. 
 
-The piepline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven, using code analysis tools like Checkstyle and SonarQube, building .var/.war artifact and storing in Nexus Repository or Building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifications on specified Slack channels. 
+The pipeline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven, using code analysis tools like Checkstyle and SonarQube, building .var/.war artifact and storing in Nexus Repository or building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifications on specified Slack channels. 
+
+The above pipeline is executed in the following three ways: 
+- Whenever a user makes changes (eg. commit, push) to the repository. This is made possible by use of GitHub Webhooks.
+- Remote execution using Jenkins API/Remote Trigger.
+- Manual execution. 
 
 [Link](https://github.com/Aranya7/vprofile-repo-for-devops-project) for vprofile app repository.
 
@@ -118,19 +123,19 @@ The piepline created in the project makes use of multiple stages that involve: C
 
    c. SonarQube Login Test
 
-2. Setup GitHub Webhook with Jenkins IP
+6. Setup GitHub Webhook with Jenkins IP
 
-3. Copy Docker Files from the Repository
+7. Copy Docker Files from the Repository
 
-4. Create Two Separate Jenkinsfile for staging and production in Source Code
+8. Create Two Separate Jenkinsfile for staging and production in Source Code
 
-5. AWS Steps
+9. AWS Steps
 
    a. IAM Setup
 
    b. ECR Repository Setup
 
-5. Jenkins Steps
+10. Jenkins Steps
 
    a. Install Plugins
 
@@ -142,11 +147,11 @@ The piepline created in the project makes use of multiple stages that involve: C
 
    - Pipeline: AWS Steps
 
-6. Install Docker Engine and AWS CLI on Jenkins Server
+11. Install Docker Engine and AWS CLI on Jenkins Server
 
-7. Write Jenkinsfile for Building image and Publish it to ECR
+12. Write Jenkinsfile for Building image and Publish it to ECR
 
-8. ECS Setup
+13. ECS Setup
 
    a. Cluster Setup
 
@@ -154,10 +159,10 @@ The piepline created in the project makes use of multiple stages that involve: C
 
    c. Service Setup
 
-9. Code for Deploying Docker Image to ECS
+14. Code for Deploying Docker Image to ECS
 
-10. Repeat the Steps for Production ECS Cluster
+15. Repeat the Steps for Production ECS Cluster
 
-11. Promoting Docker Image for Production
+16. Promoting Docker Image for Production
 
-12. Slack Notifications
+17. Slack Notifications
