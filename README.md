@@ -4,7 +4,7 @@ This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/wha
 
 The pipeline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven, using code analysis tools like Checkstyle and SonarQube, building .var/.war artifact and storing in Nexus Repository or building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifications on specified Slack channels. 
 
-The above pipeline is executed in the following three ways: 
+The above pipeline can be executed in the following three ways: 
 - Whenever a user makes changes (eg. commit, push) to the repository. This is made possible by use of GitHub Webhooks.
 - Remote execution using Jenkins API/Remote Trigger.
 - Manual execution. 
