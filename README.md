@@ -2,7 +2,7 @@
 
 This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd) (_Continuous Integration and Continuous Delivery_) of a java-based vprofile project using Jenkins, Nexus, SonarQube, Docker, AWS Cloud Services and Slack. 
 
-The pipeline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven, using code analysis tools like Checkstyle and SonarQube, building .var/.war artifact and storing in Nexus Repository or building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifications on specified Slack channels. 
+The pipeline created in the project makes use of multiple stages that involve: Cloning GitHub repository, testing code using maven, using code analysis tools like Checkstyle and SonarQube, conducting Quality Gate tests received from Sonar server using Sonar Webhooks, building .var/.war artifact and storing in Nexus Repository or building Docker image and storing in Elastic Container Registry, hosting created image on Elastic Container Service, sending out success or failure notifications on specified Slack channels. 
 
 The above pipeline can be executed in the following three ways: 
 - Whenever a user makes changes (eg. commit, push) to the repository. This is made possible by use of GitHub Webhooks.
