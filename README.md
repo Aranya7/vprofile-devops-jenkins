@@ -11,7 +11,7 @@ The above pipeline can be executed in the following three ways:
 
 [Link](https://github.com/Aranya7/vprofile-repo-for-devops-project) for vprofile app repository.
 
-## Problem - Issues with Current Situation:
+## Problem Statement - Issues with the Current System:
 
 - In an Agile SDLC, there will be Frequent Code changes
 
