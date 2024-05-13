@@ -1,4 +1,4 @@
-# Continuous Integration and Continuous Delivery of Vprofile Project
+# Automated Continuous Integration and Delivery Pipeline for Java Project
 
 This is a DevOps project for [CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd) (_Continuous Integration and Continuous Delivery_) of a java-based vprofile project using Jenkins, Nexus, SonarQube, Docker, AWS Cloud Services and Slack. 
 
